@@ -12,7 +12,7 @@ import {
   MessageCircle,
   Smartphone,
   Check,
-  
+  TrendingUp,
   Clock,
   ShieldCheck
 } from 'lucide-react';
@@ -78,6 +78,7 @@ export default function App() {
           </div>
 
           {}
+          { }
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8">
             <a href="#fitur" className="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">Fitur</a>
@@ -94,6 +95,7 @@ export default function App() {
           </div>
 
           {}
+          { }
           {/* Mobile Menu Button */}
           <button 
             className="md:hidden text-slate-600 p-2"
@@ -118,6 +120,7 @@ export default function App() {
       </header>
 
       {}
+      { }
       {/* 2. HERO SECTION */}
       <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
         {/* Background Decorative Blobs */}
@@ -151,6 +154,7 @@ export default function App() {
           </div>
 
           {}
+          { }
           {/* Dashboard Image */}
           <div className="mt-16 lg:mt-24 relative max-w-5xl mx-auto px-4 sm:px-0">
             <img 
@@ -163,6 +167,7 @@ export default function App() {
       </section>
 
       {}
+      { }
       {/* 5. SOCIAL PROOF / STATS (Banner) */}
       <section className="bg-blue-600 py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -187,6 +192,7 @@ export default function App() {
       </section>
 
       {}
+      { }
       {/* 3. FEATURES SECTION (Grid Layout) */}
       <section id="fitur" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -218,6 +224,7 @@ export default function App() {
               </p>
             </div>
 
+            { }
             {/* Feature 3 */}
             <div className="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
               <div className="w-14 h-14 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
@@ -244,6 +251,7 @@ export default function App() {
       </section>
 
       {}
+      { }
       {/* 4. COMPARISON SECTION */}
       <section id="solusi" className="py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -284,6 +292,7 @@ export default function App() {
               </ul>
             </div>
 
+            { }
             {/* Laundrix Way */}
             <div className="flex-1 bg-gradient-to-b from-blue-50 to-white rounded-3xl p-8 lg:p-10 border-2 border-blue-100 shadow-xl relative overflow-hidden ring-4 ring-blue-50">
               <div className="absolute top-0 right-0 p-4 opacity-5">
@@ -320,7 +329,91 @@ export default function App() {
         </div>
       </section>
 
-      {}
+      {/* 5. PRICING SECTION */}
+      <section id="harga" className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-2xl mx-auto mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Investasi Terjangkau, Hasil Maksimal</h2>
+            <p className="text-slate-600">Pilih paket yang paling sesuai dengan kebutuhan operasional laundry Anda. Transparan tanpa biaya tersembunyi.</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* Paket Starter */}
+            <div className="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 relative flex flex-col">
+              <div className="mb-8">
+                <h3 className="text-2xl font-bold text-slate-900 mb-2">Starter</h3>
+                <p className="text-slate-500 text-sm">Cocok untuk laundry pemula atau skala kecil.</p>
+              </div>
+              <div className="mb-8 flex items-baseline gap-2">
+                <span className="text-4xl font-extrabold text-slate-900">Rp40.000</span>
+                <span className="text-slate-500 font-medium">/bulan</span>
+              </div>
+              <ul className="space-y-4 mb-8 flex-1">
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="text-blue-600 shrink-0" size={20} />
+                  <span className="text-slate-700">1 Outlet / Cabang</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="text-blue-600 shrink-0" size={20} />
+                  <span className="text-slate-700">Manajemen Kasir (POS)</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="text-blue-600 shrink-0" size={20} />
+                  <span className="text-slate-700">Cetak Struk Thermal (Bluetooth)</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="text-blue-600 shrink-0" size={20} />
+                  <span className="text-slate-700">Laporan Omzet Harian & Bulanan</span>
+                </li>
+              </ul>
+              <button className="w-full bg-slate-100 hover:bg-slate-200 text-slate-800 py-3 rounded-xl font-bold transition-colors">
+                Pilih Starter
+              </button>
+            </div>
+
+            {/* Paket Pro */}
+            <div className="bg-blue-600 rounded-3xl p-8 border border-blue-600 shadow-2xl shadow-blue-900/20 transform md:-translate-y-4 relative flex flex-col">
+              <div className="absolute top-0 right-0 bg-amber-400 text-amber-950 text-xs font-bold px-3 py-1 rounded-bl-xl rounded-tr-3xl uppercase tracking-wider">
+                Paling Laris
+              </div>
+              <div className="mb-8">
+                <h3 className="text-2xl font-bold text-white mb-2">Pro</h3>
+                <p className="text-blue-200 text-sm">Untuk laundry berkembang dengan banyak karyawan.</p>
+              </div>
+              <div className="mb-8 flex items-baseline gap-2">
+                <span className="text-4xl font-extrabold text-white">Rp89.000</span>
+                <span className="text-blue-200 font-medium">/bulan</span>
+              </div>
+              <ul className="space-y-4 mb-8 flex-1">
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="text-blue-300 shrink-0" size={20} />
+                  <span className="text-white">Semua fitur di paket Starter</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="text-blue-300 shrink-0" size={20} />
+                  <span className="text-white">Multi-Outlet (Hingga 3 Cabang)</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="text-blue-300 shrink-0" size={20} />
+                  <span className="text-white">Multi-User (Akses Kasir & Owner)</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="text-blue-300 shrink-0" size={20} />
+                  <span className="text-white">Kirim Struk via WhatsApp Otomatis</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="text-blue-300 shrink-0" size={20} />
+                  <span className="text-white">Laporan Analisis Laba Rugi Lanjutan</span>
+                </li>
+              </ul>
+              <button className="w-full bg-white hover:bg-slate-50 text-blue-600 py-3 rounded-xl font-bold transition-colors shadow-lg">
+                Pilih Pro
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 6. FOOTER & FINAL CTA */}
       <footer className="bg-slate-900 pt-20 pb-10 border-t border-slate-800 relative overflow-hidden">
         {/* Glow effect */}
@@ -356,6 +449,7 @@ export default function App() {
               </p>
             </div>
 
+            { }
             {/* Links & Socials */}
             <div className="flex flex-wrap justify-center items-center gap-6">
                <button 
@@ -397,6 +491,7 @@ export default function App() {
       </footer>
       
       {}
+      { }
       {/* 7. MODAL SYARAT & KETENTUAN */}
       {isTnCOpen && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6">
@@ -441,6 +536,7 @@ export default function App() {
                 </ul>
               </div>
 
+              { }
               <div>
                 <h3 className="text-base font-bold text-slate-900 mb-2">2. Akun dan Keamanan</h3>
                 <ul className="list-disc pl-5 space-y-2">
@@ -495,6 +591,7 @@ export default function App() {
                 </p>
               </div>
 
+              { }
               <div>
                 <h3 className="text-base font-bold text-slate-900 mb-2">8. Penghentian Layanan</h3>
                 <ul className="list-disc pl-5 space-y-2">
@@ -551,6 +648,7 @@ export default function App() {
       )}
 
       {}
+      { }
       {/* 8. MODAL KEBIJAKAN PRIVASI */}
       {isPrivacyOpen && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6">
@@ -608,6 +706,7 @@ export default function App() {
                 </ul>
               </div>
 
+              { }
               <div>
                 <h3 className="text-base font-bold text-slate-900 mb-2">2. Bagaimana Kami Menggunakan Informasi Anda</h3>
                 <p className="mb-2">Kami menggunakan data yang dikumpulkan semata-mata untuk mendukung operasional bisnis Anda, dengan rincian sebagai berikut:</p>
@@ -654,6 +753,7 @@ export default function App() {
                 </p>
               </div>
               
+              { }
               <div>
                 <h3 className="text-base font-bold text-slate-900 mb-2">7. Hak Anda</h3>
                 <p className="mb-2">Sebagai Pengguna, Anda memiliki hak penuh untuk:</p>
