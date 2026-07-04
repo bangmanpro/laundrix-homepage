@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { 
   LayoutDashboard, 
   Calculator, 
@@ -12,7 +12,7 @@ import {
   MessageCircle,
   Smartphone,
   Check,
-  TrendingUp,
+  
   Clock,
   ShieldCheck
 } from 'lucide-react';
