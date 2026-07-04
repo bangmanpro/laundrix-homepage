@@ -11,8 +11,7 @@ import {
   X,
   MessageCircle,
   Smartphone,
-  Check,
-  
+  Check,  
   Clock,
   ShieldCheck
 } from 'lucide-react';
