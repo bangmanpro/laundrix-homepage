@@ -12,6 +12,7 @@ import {
   MessageCircle,
   Smartphone,
   Check,  
+  
   Clock,
   ShieldCheck
 } from 'lucide-react';
